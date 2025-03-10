@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .container{
+            display: flex;
+            width: 800px;
+            background: #f4f4f4;
+            box-shadow: 0 0 10px rgba(35, 33, 33, 0.1);
+            margin: 20px;
+        }
+        .sidebar{
+            width: 30%;
+            background: #224;
+            color: white;
+            padding: 20px;
+        }
+        .profile{
+            text-align: center;
+        }
+        .profile img{
+            width: 170px;
+            height: 150px;
+            border-radius: 35%;
+        }
+        .contact, .skills, .certificates {
+            margin-top: 20px;
+        }
+        .contact p, .skills ul, .certificates ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li, .certificates ul li {
+            margin: 5px 0;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+        }
+        .content section {
+            margin-bottom: 20px;
+        }
+        .h3{
+            color: #1e90ff;
+        }
+        h3 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+        h4 {
+            margin-bottom: 5px;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #444;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .progress-bar {
+            height: 10px;
+            background-color: #40c6dd;
+            border-radius: 5px;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        h3 {
+            color: #1E3A5F; /* Dark Navy */
+        }
+        
+        h3.another {
+            color: darkgray; /* Use this for specific h3 elements */
+        }
+        
+        h4 {
+            color: #0056B3; /* Royal Blue */
+        }
+        
+        a {
+            color: #00ccff; /* Light Blue */
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #ff4500; /* Orange Hover */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="https://media.istockphoto.com/id/507995592/photo/pensive-man-looking-at-the-camera.jpg?s=612x612&w=0&k=20&c=fVoaIqpHo07YzX0-Pw51VgDBiWPZpLyGEahSxUlai7M=" alt="">
+                <h2>Your Name</h2>
+                <p>Title</p>
+                <div class="social">
+                    <a href="https://shreyarthuni.ac.in/" style="color: #1e90ff;">GitHub</a> | <a href="#" style="color: #1e90ff;">LinkedIn</a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3 class="another">Contact</h3>
+                <p>Phone: <a href="tel:99XXXXXX85">99XXXXXX85</a></p>
+                <p>Email: <a href="mailto:yourname123@gmail.com">yourname123@gmail.com</a></p>                
+            </div>
+            <div class="skills">
+                <h3 class="another">Skills</h3>
+                <ul>
+                    <li>Skill 1
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>Skill 2
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>Skill 3
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                    <li>Skill 4
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>Skill 5
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <div class="certificate">
+                    <h3 class="another">Certificates</h3>
+                    <ul>
+                        <li>Certificate 1</li>
+                        <li>Certificate 2</li>
+                        <li>Certificate 3</li>
+                    </ul>
+                </div>
+        </aside>
+        <main class="content">
+            <section class="objective">
+                <h3>Objective</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis odio quidem suscipit eligendi ducimus nemo reiciendis molestiae repellendus vero eos non architecto quis, expedita dolor animi amet reprehenderit aliquam commodi.</p>
+            </section>
+            <section class="experiment">
+                <h3>Experiment</h3>
+                <div>
+                    <h4>Role | Company Name 1</h4>
+                    <p>From - To</p>
+                    <p>Description</p>
+                </div>
+                <div>
+                    <h4>Role | Company Name 2</h4>
+                    <p>From - To</p>
+                    <p>Description</p>
+                </div>
+                <h4>Role | Company Name 3</h4>
+                    <p>From - To</p>
+                    <p>Description</p>
+            </section>
+            <section class="projects">
+                <h3>Projects</h3>
+                <div>
+                    <h4>Project 1 | Tech Stark</h4>
+                    <p>Description</p>
+                </div>
+            </section>
+            <section class="education">
+                <h3>Education</h3>
+                <div>
+                    <h4>Education Name 1</h4>
+                    <p>From - To | College Name</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
